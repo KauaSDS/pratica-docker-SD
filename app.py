@@ -29,6 +29,7 @@ def home():
     <body>
         <h1>Outra mensagem docker!!</h1>
         <h2>Teste</h2>
+        <h3>Teste 2</h3>
         <p>Número de acessos: {acessos}</p>
     </body>
     </html>
