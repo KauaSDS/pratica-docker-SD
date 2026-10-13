@@ -1,0 +1,22 @@
+services:
+  redis:
+    image: redis
+    volumes:
+      - redis_data:/data
+    networks:
+      - rede_pratica
+  
+  app:
+    build: .
+    ports:
+      - "5000:5050" 
+    environment:
+      - REDIS_HOST=redis
+    networks:
+      - rede_pratica
+
+networks:
+  rede_pratica:
+
+volumes:
+  redis_data:
