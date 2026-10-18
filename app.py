@@ -27,7 +27,7 @@ def home():
         <title>Prática Docker</title>
     </head>
     <body>
-        <h1>Outra mensagem docker!!</h1>
+        <h1>Olá, Kubernetes!</h1>
         <h2>Teste</h2>
         <h3>Teste 2</h3>
         <p>Número de acessos: {acessos}</p>

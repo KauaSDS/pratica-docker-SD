@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: contador-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: contador
+  template:
+    metadata:
+      labels:
+        app: contador
+    spec:
+      containers:
+      - name: contador
+        image: contador:2.0
+        imagePullPolicy: Never
+        env:
+        - name: REDIS_HOST
+          value: "redis"
