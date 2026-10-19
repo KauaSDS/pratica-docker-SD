@@ -28,6 +28,7 @@ def home():
     </head>
     <body>
         <h1>Olá, Kubernetes!</h1>
+        <h2> E docker </h2>
         <h2>Teste</h2>
         <h3>Teste 2</h3>
         <p>Número de acessos: {acessos}</p>
